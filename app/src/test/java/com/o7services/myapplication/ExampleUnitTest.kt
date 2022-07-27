@@ -1,4 +1,4 @@
-package com.o7services.myapplication
+package com.o7services.validations
 
 import org.junit.Test
 

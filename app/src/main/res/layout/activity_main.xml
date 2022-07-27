@@ -1,63 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ic_launcher_foreground"
-    android:gravity="center_horizontal|center_vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background">
-
-    </ImageView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_margin="@dimen/margin_20dp"
-        android:padding="@dimen/margin_20dp"
-        android:textSize="@dimen/margin_20sp"
-        android:background="@color/purple_500"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="@string/text_view_1"/>
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textSize="42sp" />
 
-     <TextView
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-         android:visibility="invisible"
-         android:layout_marginHorizontal="@dimen/margin_20dp"
-        android:padding="@dimen/margin_20dp"
-        android:textSize="@dimen/margin_20sp"
-        android:background="@color/purple_500"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="@string/text_view_1"/>
-
-    <LinearLayout
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/enter_username"
+        android:textSize="26sp"
+        />
+    <EditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+        android:textSize="26sp"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:gravity="end"
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:padding="10dp"
+        android:text="@string/forgot_password"
+        android:textColor="#26428b"
+        />
 
-        <TextView
-            android:layout_weight="1"
-            android:layout_marginRight="@dimen/margin_20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_view_1"/>
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_view_1"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="@string/login_title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
 
-
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:padding="10dp"
+        android:text="@string/signup"
+        android:textColor="#26428b"
+        />
 
 </LinearLayout>
+</layout>
